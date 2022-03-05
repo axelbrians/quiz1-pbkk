@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Oolong Industry</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/homepage.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/quiz1_pbkk.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <nav class="my-navbar sticky-top">
+        <div class="my-navbar-content">
+            <div class="navbar-left">
+                <object style="max-height: 50px;" type="image/svg+xml" data="~/image/pro-logo.svg"></object>
+            </div>
+
+            <div class="navbar-right">
+                <ul style="    display: flex;
+                               flex-wrap: wrap;
+                               margin-left: auto;
+                               padding-left: 0;
+                               margin-bottom: 0;
+                               list-style: none;">
+                    <li class="nav-item my-nav-item-active">
+                        <a class="my-nav-link my-nav-link-active" asp-area="" asp-page="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="my-nav-link my-nav-link-normal" asp-area="" asp-page="Profile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="my-nav-link my-nav-link-normal" asp-area="" asp-page="Company">Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="my-nav-link my-nav-link-normal" asp-area="" asp-page="Product">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="my-nav-link my-nav-link-normal" asp-area="" asp-page="Collaboration">Collaboration</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - Pro
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

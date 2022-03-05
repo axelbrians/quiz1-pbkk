@@ -1,0 +1,43 @@
+﻿@page
+@model quiz1_pbkk.Pages.q1.Index
+
+@{
+    Layout = "Shared/_Layout";
+    var repeat = 10;
+}
+
+<div style="border: 1px solid red; padding: 3rem 7rem 0 7rem;">
+    <div style="border: 1px solid greenyellow;" class="row px-5">
+        <div style="border: 1px solid pink;" class="col section-1-left">
+            <p class="section-1-left-title">Find the best experience of transactions.</p>
+            <p class="section-1-left-subtitle">Providing easy to use feature with multiple benefits at no cost. Anywhere, anytime, one click away.</p>
+        </div>
+        <div style="border: 1px solid sandybrown" class="col align-content-center py-5">
+            <object style="height: 35rem;" type="image/svg+xml" data="~/image/finance-app.svg"></object>
+        </div>
+    </div>
+</div>
+
+@while(repeat >= 0) {
+    var backgroundColor = "#0dcaf0";
+
+    if (repeat % 2 != 0) {
+        backgroundColor = "cadetblue";
+    }
+    
+    <div style="background-color: @backgroundColor" class="text-center">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    </div>
+    
+    repeat--;
+}
