@@ -1,13 +1,56 @@
 ﻿.section-1-left {
+    display: flex;
+    flex-direction: column;
     padding-right: 3rem;
+    justify-content: center;
 }
 
 .section-1-left-title {
     font-size: 3em;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .section-1-left-subtitle {
     font-size: 1.3em;
     font-weight: normal;
+}
+
+.section-1-right {
+    padding: 0 4rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.section-2-title {
+    font-size: 3em;
+    font-weight: 700;
+    color: #000000;
+}
+
+.section-2-content-container {
+    display: flex;
+    padding: 1rem 5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+}
+
+.section-2-img {
+    height: 10rem;
+    object-fit: contain;
+}
+
+.section-2-subtitle {
+    font-size: 2em;
+    font-weight: 600;
+    color: #000000;
+}
+
+.section-2-caption {
+    font-size: 1em;
+    font-weight: 400;
+    color: #000000;
 }
