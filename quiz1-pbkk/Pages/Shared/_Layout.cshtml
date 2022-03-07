@@ -3,10 +3,15 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Oolong Industry</title>
+    <title>Bank Pro - @ViewData["Title"]</title>
+    
+    @{
+        var cssName = ViewData["Title"]?.ToString()?.ToLower();
+        var cssSpesific = $"~/css/{cssName}.css";
+    }
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/homepage.css" asp-append-version="true" />
+    <link rel="stylesheet" href="@cssSpesific" asp-append-version="true" />
     <link rel="stylesheet" href="~/quiz1_pbkk.styles.css" asp-append-version="true" />
 </head>
 <body>
@@ -18,6 +23,41 @@
                 </a>
             </div>
 
+            @{
+                var homeNav = "";
+                var profileNav = "";
+                var companyNav = "";
+                var productNav = "";
+                var collabNav = "";
+
+                var homeLink = "my-nav-link-normal";
+                var profileLink = "my-nav-link-normal";
+                var companyLink = "my-nav-link-normal";
+                var productLink = "my-nav-link-normal";
+                var collabLink = "my-nav-link-normal";
+
+                if (ViewData["Title"]?.ToString() == "Homepage") {
+                    homeNav = "my-nav-item-active";
+                    homeLink = "my-nav-link-active";
+                }
+                if (ViewData["Title"]?.ToString() == "Profile") {
+                    profileNav = "my-nav-item-active";
+                    profileLink = "my-nav-link-active";
+                }
+                if (ViewData["Title"]?.ToString() == "Company") {
+                    companyNav = "my-nav-item-active";
+                    companyLink = "my-nav-link-active";
+                }
+                if (ViewData["Title"]?.ToString() == "Product") {
+                    productNav = "my-nav-item-active";
+                    productLink = "my-nav-link-active";
+                }
+                if (ViewData["Title"]?.ToString() == "Collaboration") {
+                    collabNav = "my-nav-item-active";
+                    collabLink = "my-nav-link-active";
+                }
+            }
+            
             <div class="navbar-right">
                 <ul style="    display: flex;
                                flex-wrap: wrap;
@@ -25,34 +65,48 @@
                                padding-left: 0;
                                margin-bottom: 0;
                                list-style: none;">
-                    <li class="nav-item my-nav-item-active">
-                        <a class="my-nav-link my-nav-link-active" asp-area="" asp-page="Index">Home</a>
+                    <li class="nav-item @homeNav">
+                        <a class="my-nav-link @homeLink" asp-area="" asp-page="Index">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="my-nav-link my-nav-link-normal" asp-area="" asp-page="Profile">Profile</a>
+                    <li class="nav-item @profileNav">
+                        <a class="my-nav-link @profileLink" asp-area="" asp-page="Profile">Profile</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="my-nav-link my-nav-link-normal" asp-area="" asp-page="Company">Company</a>
+                    <li class="nav-item @companyNav">
+                        <a class="my-nav-link @companyLink" asp-area="" asp-page="Company">Company</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="my-nav-link my-nav-link-normal" asp-area="" asp-page="Product">Product</a>
+                    <li class="nav-item @productNav">
+                        <a class="my-nav-link @productLink" asp-area="" asp-page="Product">Product</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="my-nav-link my-nav-link-normal" asp-area="" asp-page="Collaboration">Collaboration</a>
+                    <li class="nav-item @collabNav">
+                        <a class="my-nav-link @collabLink" asp-area="" asp-page="Collaboration">Collaboration</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <main role="main" class="pb-3">
+    <main role="main">
         @RenderBody()
     </main>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - Pro
+<footer class="footer">
+    <div class="footer-1">
+        <div class="footer-1-left">
+            <img style="max-height: 65px;" src="~/image/pro-logo-white.svg" alt="app-logo-white"/>
         </div>
-    </footer>
+        <div class="footer-1-right">
+            <a><img style="max-height: 2.5rem; margin-left: 1rem;" src="~/image/facebook-white.svg"/></a>
+            <a><img style="max-height: 2.5rem; margin-left: 1rem;" src="~/image/youtube-white.svg"/></a>
+            <a><img style="max-height: 2.5rem; margin-left: 1rem;" src="~/image/twitter-white.svg"/></a>
+            <a><img style="max-height: 2.5rem; margin-left: 1rem;" src="~/image/instagram-white.svg"/></a>
+        </div>
+        
+        
+    </div>
+    
+    <div class="footer-2">
+        <p style="text-justify: inter-word; color: white;">PT Bank Pro Tbk is registered and supervised by Financial Services Authority (OJK), and also a participant of Indonesia Deposit Insurance Corporation (LPS) guarantee program.</p>
+    </div>
+</footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -2,40 +2,40 @@
 @model quiz1_pbkk.Pages.q1.Index
 
 @{
+    ViewData["Title"] = "Homepage";
     Layout = "Shared/_Layout";
-    var repeat = 10;
 }
 
-<div style="border: 1px solid red; padding: 3rem 7rem 3rem 7rem;">
-    <div style="border: 1px solid greenyellow;" class="row px-5">
-        <div style="border: 1px solid pink;" class="col section-1-left">
-            <p class="section-1-left-title">Find the best experience of transactions.</p>
+<div style="padding: 3rem 7rem 3rem 7rem;">
+    <div class="row px-5">
+        <div class="col section-1-left">
+            <p class="section-1-left-title">Smart Banking To Manage Your Money & Transaction</p>
             <p class="section-1-left-subtitle">Providing easy to use feature with various benefits at no cost. Anywhere, anytime, one click away.</p>
         </div>
-        <div style="border: 1px solid sandybrown" class="col section-1-right">
-            <object style="height: 35rem;" type="image/svg+xml" data="~/image/finance-app.svg"></object>
+        <div class="col section-1-right">
+            <object style="height: 30rem;" type="image/svg+xml" data="~/image/finance-app.svg"></object>
         </div>
     </div>
 </div>
 
-<div style="border: 1px solid red; padding: 4rem 7rem 4rem 7rem;">
+<div style="padding: 4rem 7rem 4rem 7rem;">
     <div class="row">
-        <p class="text-center section-2-title">Why we're different</p>
+        <p class="text-center section-2-title">We Provide Quality Service</p>
     </div>
     
-    <div style="border: 1px solid greenyellow;" class="row px-5 mt-5">
-        <div style="border: 1px solid pink;" class="col section-2-content-container section-2-left">
+    <div class="row px-5 mt-5">
+        <div class="col section-2-content-container section-2-left">
             <img class="section-2-img" src="image/credit-card.png"/>
             <p class="section-2-subtitle">Perzonalize your Card</p>
             <p class="section-2-caption">Fully customizable card that you can edit freely, custom your own card based on your preference.
-</p>
+            </p>
         </div>
-        <div style="border: 1px solid sandybrown" class="col section-2-content-container section-2-middle">
+        <div class="col section-2-content-container section-2-middle">
             <img class="section-2-img" src="image/money-sack.png"/>
             <p class="section-2-subtitle">Zero Fee</p>
             <p class="section-2-caption">Make your payment across the world without worrying about any fee.</p>
         </div>
-        <div style="border: 1px solid #0aff32" class="col section-2-content-container section-2-right">
+        <div class="col section-2-content-container section-2-right">
             <img class="section-2-img" src="image/bank.png"/>
             <p class="section-2-subtitle">All in one place</p>
             <p class="section-2-caption">Ready to link any bank or financial institution for your transaction and money management needs into our Apps.</p>
@@ -43,26 +43,23 @@
     </div>
 </div>
 
-@while(repeat >= 0) {
-    var backgroundColor = "#0dcaf0";
-
-    if (repeat % 2 != 0) {
-        backgroundColor = "cadetblue";
-    }
-    
-    <div style="background-color: @backgroundColor" class="text-center">
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+<div style="padding: 4rem 7rem 4rem 7rem;">
+    <div class="row px-4 my-5">
+        <div class="col mx-5 py-5 section-3-left">
+            <img style="max-height: 20rem" src="image/padlock.png"/>
+        </div>
+        <div class="col section-3-right">
+            <p class="section-3-right-title">Pro is Secure</p>
+            <ul class="section-3-right-list">
+                <li>Biometric login makes everything effortless.</li>
+                <li>Simple limit/block settings gives you the most-guarded online defense.</li>
+                <li>You control access permission when sharing Pockets with friends.</li>
+            </ul>
+            <div class="text-center">
+                <a style="text-decoration: none;" asp-page="Product">
+                    <button class="section-3-btn">learn more</button>
+                </a>
+            </div>
+        </div>
     </div>
-    
-    repeat--;
-}
+</div>

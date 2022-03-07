@@ -1,0 +1,51 @@
+﻿@page
+@model quiz1_pbkk.Pages.q1.Product
+
+@{
+    ViewData["Title"] = "Product";
+    Layout = "Shared/_Layout";
+}
+
+<div style="padding: 3rem 7rem 3rem 7rem;" class="section-1">
+    <div class="section-1-left">
+        <p class="section-1-left-title">Pay & Send</p>
+        <p class="section-1-left-subtitle">Pay bills and send money effortlessly in the palm of your hand, with zero fee and zero worries.</p>
+    </div>
+    <div class="section-1-right">
+        <img style="max-height: 20rem;" src="~/image/pay-send.png" alt="send and pay"/>
+    </div>
+</div>
+
+<div style="padding: 3rem 10rem 3rem 10rem; display: flex; justify-content: center" >
+    <div style="width: 50%; padding: 1rem 3rem 1rem 3rem;" class="section-1-detail">
+        <p class="section-1-left-detail-title">What is Pay & Send?</p>
+        <p class="section-1-left-detail-subtitle">Send money anytime you want in just a few simple steps. You can deal with these transactions from anywhere you'd like, just like a dream.</p>
+    </div>
+</div>
+
+@{
+    var repeat = 0;
+}
+@while (repeat >= 0) {
+    var backgroundColor = "#0dcaf0";
+
+    if (repeat % 2 != 0) {
+        backgroundColor = "cadetblue";
+    }
+
+    <div style="background-color: @backgroundColor" class="text-center">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    </div>
+
+    repeat--;
+}

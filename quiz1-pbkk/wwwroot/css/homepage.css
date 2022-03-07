@@ -16,7 +16,7 @@
 }
 
 .section-1-right {
-    padding: 0 4rem 0 4rem;
+    padding: 3rem 0 3rem 0;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -53,4 +53,60 @@
     font-size: 1em;
     font-weight: 400;
     color: #000000;
+}
+
+.section-3-left {
+    border-radius: 1rem;
+    background: #E4FAFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-3-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-3-right-title {
+    font-size: 2em;
+    font-weight: 700;
+    color: #000000;
+}
+
+.section-3-right-list {
+}
+
+.section-3-right ul li {
+    list-style-type: none;
+    padding: 0 0 1.3em 40px;
+    background-image: url(https://www.jago.com/images/pointerjago.png);
+    background-size: 1rem;
+    background-repeat: no-repeat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    letter-spacing: .2px;
+}
+
+.section-3-btn {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 8px 26px 6px;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    outline: 0;
+    transition: .15s linear;
+    color: #fff;
+    background-color: #a605ad;
+    border-color: #a605ad;
+}
+
+.section-3-btn:hover {
+    color: #fff;
+    background-color: #930499;
+    border-color: #930499;
+    box-shadow: 0 1px 10px rgb(166 5 173 / 40%);
 }

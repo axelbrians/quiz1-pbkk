@@ -20,10 +20,6 @@ html {
  
 */
 
-body {
-  margin-bottom: 60px;
-}
-
 .my-navbar {
   top: 0;
   left: 0;
@@ -94,4 +90,37 @@ body {
 
 .my-nav-item-active {
   border-bottom: 0.2rem solid #A605AD;
+}
+
+
+.footer {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #FDAF27;
+}
+
+.footer-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+
+.footer-1-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 40rem;
+  justify-content: space-between;
+  padding: 1rem 4rem 0 4rem;
+  text-align: justify;
 }

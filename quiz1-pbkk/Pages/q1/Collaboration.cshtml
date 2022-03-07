@@ -1,0 +1,36 @@
+﻿@page
+@model quiz1_pbkk.Pages.q1.Collaboration
+
+@{
+    ViewData["Title"] = "Collaboration";
+    Layout = "Shared/_Layout";
+}
+
+
+
+@{
+    var repeat = 5;
+}
+@while (repeat >= 0) {
+    var backgroundColor = "#0dcaf0";
+
+    if (repeat % 2 != 0) {
+        backgroundColor = "cadetblue";
+    }
+
+    <div style="background-color: @backgroundColor" class="text-center">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    </div>
+
+    repeat--;
+}
