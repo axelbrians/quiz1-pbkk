@@ -6,31 +6,49 @@
     Layout = "Shared/_Layout";
 }
 
-
-
-@{
-    var repeat = 5;
-}
-@while (repeat >= 0) {
-    var backgroundColor = "#0dcaf0";
-
-    if (repeat % 2 != 0) {
-        backgroundColor = "cadetblue";
-    }
-
-    <div style="background-color: @backgroundColor" class="text-center">
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+<div class="section-1">
+    <div class="section-1-left">
+        <img style="height: 40rem;" src="~/image/stock-market.png" alt="stock image"/>
     </div>
 
-    repeat--;
-}
+    <div class="section-1-right">
+        <div class="section-1-right-title">
+            Pro & Seed in collaboration. To make investing hassle-free
+        </div>
+        <div class="section-1-right-subtitle">
+            Connect your Pro Wallet to your Seed Account. Investing is now faster & free from transaction fee.
+        </div>
+    </div>
+</div>
+
+<div class="section-2">
+    <div class="section-2-title">
+        <p>What's in it for you?</p>
+    </div>
+    <div class="section-2-row">
+        <div class="section-2-row-item">
+            <img style="height: 6rem;" src="~/image/ic_zero_digit.svg" alt="zero digits"/>
+            <p class="section-2-row-item-caption">Investing in Seed using Pro is free from top-up fees.</p>
+        </div>
+        <div class="section-2-row-item">
+            <img style="height: 6rem;" src="~/image/ic_clock_filled.svg" alt="clock"/>
+            <p class="section-2-row-item-caption">Instant confirmation without the hassle of switching applications.</p>
+        </div>
+        <div class="section-2-row-item">
+            <img style="height: 6rem;" src="~/image/ic_wallet_filled.svg" alt="wallet"/>
+            <p class="section-2-row-item-caption">Top up your investment from 1 USD up to 1.000.000 USD</p>
+        </div>
+    </div>
+    <div class="section-2-row">
+        <div style="flex: 0.5;"></div>
+        <div class="section-2-row-item">
+            <img style="height: 6rem;" src="~/image/ic_clipboard_filled.svg" alt="clock"/>
+            <p class="section-2-row-item-caption">Schedule your transaction. Plan your investment every month.</p>
+        </div>
+        <div class="section-2-row-item">
+            <img style="height: 6rem;" src="~/image/ic_mail_filled.svg" alt="wallet"/>
+            <p class="section-2-row-item-caption">Get instant notification when your mutual fund is redeemed to your Jago pocket.</p>
+        </div>
+        <div style="flex: 0.5;"></div>
+    </div>
+</div>

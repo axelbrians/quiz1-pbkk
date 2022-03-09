@@ -1,0 +1,84 @@
+﻿/*https://www.jago.com/images/partner/bibit/bg-bibit.svg*/
+
+.section-1 {
+    background: url(../image/triple-circle-bg.svg) center center no-repeat;
+    background-size: contain;
+    display: flex;
+    height: calc(100vh - 62px);
+    padding: 0 10rem;
+}
+
+.section-1-left {
+    display: flex;
+    flex: 5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1-right {
+    display: flex;
+    flex: 7;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.section-1-right-title {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.section-1-right-subtitle {
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+    background: #A605AD;
+}
+
+.section-2-title {
+    font-size: 3em;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+.section-2-row {
+    display: flex;
+    padding: 1rem 5rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.section-2-row-item {
+    display: flex;
+    flex: 1;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.section-2-row-item-caption {
+    color: white;
+    padding: 0 8rem;
+    margin-top: 0.7rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.section-2-row-btm {
+    display: flex;
+    padding: 3rem 5rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}

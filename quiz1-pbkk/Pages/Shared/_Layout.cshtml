@@ -7,11 +7,11 @@
     
     @{
         var cssName = ViewData["Title"]?.ToString()?.ToLower();
-        var cssSpesific = $"~/css/{cssName}.css";
+        var cssSpecific = $"~/css/{cssName}.css";
     }
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="@cssSpesific" asp-append-version="true" />
+    <link rel="stylesheet" href="@cssSpecific" asp-append-version="true" />
     <link rel="stylesheet" href="~/quiz1_pbkk.styles.css" asp-append-version="true" />
 </head>
 <body>

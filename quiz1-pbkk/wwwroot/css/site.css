@@ -36,6 +36,7 @@ html {
   padding-top: .75rem;
   padding-bottom: .75rem;
   min-height: 56px;
+  max-height: 90px;
   box-shadow: 0 4px 14px rgb(0 0 0 / 7%);
 }
 
