@@ -6,31 +6,36 @@
     Layout = "Shared/_Layout";
 }
 
-
-
-@{
-    var repeat = 5;
-}
-@while (repeat >= 0) {
-    var backgroundColor = "#0dcaf0";
-
-    if (repeat % 2 != 0) {
-        backgroundColor = "cadetblue";
-    }
-
-    <div style="background-color: @backgroundColor" class="text-center">
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+<div style="padding: 3rem 15rem 3rem 15rem;" class="section-1">
+    <div class="section-1-left">
+        <p class="section-1-left-title">
+            Money management that is simple, collaborative & innovative
+        </p>
+        <p class="section-1-left-subtitle">
+            Live life to the fullest with your family and friends. Now, tomorrow, together.
+        </p>
     </div>
+    <div class="section-1-right">
+        <img style="max-height: 25rem; min-height: 20rem;" src="~/image/business-idea.png" alt="idea"/>
+    </div>
+</div>
 
-    repeat--;
-}
+<div class="section-2">
+    <div class="section-2-left">
+        <img style="max-height: 25rem; min-height: 20rem;" src="~/image/man-talking-on-phone.png" alt="man talking"/>
+    </div>
+    <div class="section-2-right">
+        <p class="section-2-right-p">
+            Jago is a life-centric finance application which makes money management simple, collaborative and innovative, allowing you to focus on life, with your family and friends.
+        </p>
+        <p class="section-2-right-p">
+            Founded by serial innovators with proven track records in micro lending and digital banking, Pro is positioned to become Indonesia's pioneering and leading life-centric finance solution. We aspire to be a strong tech-based bank embedded in Indonesia's digital ecosystem, to fulfill the needs of the middle and mass market segment, including the small and medium enterprises.
+        </p>
+        <p class="section-2-right-p">
+            Formerly known as PT Bank Prometheus Tbk, in 2019. Bank Prometheus entered a new era with the shift of controlling shareholders. In 2020, we changed our name to PT Bank Pro Tbk and welcomed Seed, through its stock market exchange service, as our shareholder. In 2021, WCI Private Limited invested in Pro to strengthen our pipeline of innovations as per our aim to provide a robust life-centric finance solution.
+        </p>
+        <p class="section-2-right-p">
+            With a capital of IDR 69 trillion, Pro is officially a bank with a vast opportunity to grow and continuously innovate.
+        </p>
+    </div>
+</div>

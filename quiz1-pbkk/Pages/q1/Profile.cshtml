@@ -6,32 +6,52 @@
     Layout = "Shared/_Layout";
 }
 
-
-
-
-@{
-    var repeat = 5;
-}
-@while (repeat >= 0) {
-    var backgroundColor = "#0dcaf0";
-
-    if (repeat % 2 != 0) {
-        backgroundColor = "cadetblue";
-    }
-
-    <div style="background-color: @backgroundColor" class="text-center">
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+<div class="section-1">
+    <p class="section-1-title">Pro is...</p>
+    
+    <div class="section-1-content-container">
+        <div class="section-1-item-column">
+            <img class="section-1-item-icon" src="~/image/ic_paper_tablet.svg"/>
+            <p class="section-1-item-title">
+                Simple
+            </p>
+            <p class="section-1-item-caption">
+                Pro is a life-centric app that allows you to make Pro your own. Customize it to fit your needs and style. Look out for groundbreaking features from Pro’s collaboration with digital ecosystem players. Make the many lifestyle digital services you use daily even better and easier, simplifying your daily tasks.
+                Enjoy life without worries. Get what you want, when you want.
+            </p>
+        </div>
+        <div class="section-1-item-column">
+            <img class="section-1-item-icon" src="~/image/ic_people_filled.svg"/>
+            <p class="section-1-item-title">
+                Collaborative
+            </p>
+            <p class="section-1-item-caption">
+                Life is best enjoyed with family and friends. That is why Pro also makes sure you can collaborate in your digital financial life. Share your plans, your goals, your finances with the people closest to you.
+               Be Pro at living together. Plan, save, and spend with your family and friends.
+            </p>
+        </div>
+        <div class="section-1-item-column">
+            <img class="section-1-item-icon" src="~/image/ic_sack_filled.svg"/>
+            <p class="section-1-item-title">
+                Innovative
+            </p>
+            <p class="section-1-item-caption">
+                Innovation is at the core of Pro’s value proposition. Starting from innovation around what others call bank accounts.
+                In Pro we call them <strong>wallets</strong>. It’s the easiest way to budget and separate money. Pro wallets are <strong>simple and flexible, yet fast and secure</strong>. Pro ensures a high level of safety for your data and money, all modifiable to your preference with industry-leading security and speed. No waiting, no spinning wheels.
+                Be Pro with the most simple life finance solution.
+            </p>
+        </div>
     </div>
+</div>
 
-    repeat--;
-}
+
+<div class="bg-fixed">
+    <div class="section-2">
+        <p class="section-2-title">
+            Aspirations
+        </p>
+        <p class="section-2-subtitle">
+            Enhance the <strong>growth</strong> of millions through <strong>life-focused</strong> digital financial solutions
+        </p>
+    </div>
+</div>

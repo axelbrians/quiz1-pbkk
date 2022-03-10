@@ -1,0 +1,75 @@
+﻿
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+}
+
+.section-1-title {
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+.section-1-content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 4rem 20rem;
+}
+
+.section-1-item-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    padding: 1rem 4rem;
+}
+
+.section-1-item-icon {
+    height: 160px;
+    width: auto;
+}
+
+.section-1-item-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.section-1-item-caption {
+    line-height: 1.5rem;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+
+.bg-fixed {
+    position: relative;
+    background-image: url("../image/parallax-bean.png");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 25rem;
+}
+
+.section-2-title {
+    color: black;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.section-2-subtitle {
+    font-size: 2.4rem;
+    font-weight: 400;
+}

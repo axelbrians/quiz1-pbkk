@@ -13,6 +13,10 @@ html {
   min-height: 100%;
 }
 
+body {
+  background: #F8F9FA;
+}
+
 /* purple: #A605AD
  * lightBlue: #E4FAFF
  * textInactive: #919191
